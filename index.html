@@ -29,7 +29,9 @@ img {
 
         }
 
-
+        body {
+            background-color: rgb(238, 255, 7);
+        }
 
         h2 {
             color: rgb(253, 253, 253);
@@ -74,19 +76,5 @@ img {
             alternar = !alternar;
         }, 50); 
     </script>
- <body>
-    <script>
-        const elemento = document.getElementById('titulo');
-        let alternar = true;
-    
-        setInterval(() => {
-            if (alternar) {
-                elemento.className = 'blue'; 
-            } else {
-                elemento.className = 'green'; 
-            }
-            alternar = !alternar;
-        }, 50); 
-    </script>
- </body>
+
 </html>
