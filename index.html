@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diario de um Batata</title>
- <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-img {
+    <style>
+        .dancing-script {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        img {
             width: 296px;
             weight: 455px;
         }
 
-    .centro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .centro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    }
-    h1 {
+        }
+
+        h1 {
             text-align: center;
 
         }
@@ -28,72 +40,82 @@ img {
             margin-top: 10%;
 
         }
+
         h3 {
             margin-left: 20%;
             margin-right: 20%;
             margin-top: 10%;
 
-        body {
-            transition: background-color 0.5s;
-        }
+            body {
+                transition: background-color 0.5s;
+            }
 
-        h2 {
-            color: rgb(253, 253, 253);
-        }
+            h2 {
+                color: rgb(253, 253, 253);
+            }
 
-        h1 {
-            color: white;
-        }
+            h1 {
+                color: white;
+            }
 
-        .red{
-            color: red;
-        }
+            .red {
+                color: red;
+            }
 
-        .green{
-            color: green;
-        }
+            .green {
+                color: green;
+            }
 
-        .blue{
-            color: blue;
-        }
-        .yellow{
-            color:yellow;
-        }
-        
-</style>
+            .blue {
+                color: blue;
+            }
+
+            .yellow {
+                color: yellow;
+            }
+    </style>
 </head>
+
 <body>
     <div class="centro">
         <img src="Untitled Project.jpg">
     </div>
     <h1> primeiramente boa noite. </h1>
     <h2 id="titulo">O que eu fiz DIA 26/05/2002 </h2>
-    <h3>primeiramente eu contemplei a imagem do cruzeiro resplandece com aquele time do ronaldo fenomeno que ta jogando demais no brasil e comprei uma AIITV que nao funcionava direito mas eu pedi o rembolso la na havan, eles quiseram teimar comigo mas eu falei aqui nao pq eu conheço meus direitos e entao depois migrei papra a casa do willy wonka e fui na australia achar o LUcas Gunha Claro do DDD +45 de cASCAVEL PR. depois eu fui lanchei comi arroz e um javali que lucas matou no dente eu xinguei ele. ele pegou seu javali que matou e invocou ele e mandou me pegar. numa batalha pokemon escolhi o bruno henrique frança para enfrentar o javali, ja que ele é raro e forte e um dos mais do mundo todo. ele era shiny da bolivia. eu falei use comilao ele pegou e comeu o javali em uma so mordida e falou "aiai como eu gosto de comer".
+    <h3 class="dancing-script">primeiramente eu contemplei a imagem do cruzeiro resplandece com aquele time do ronaldo
+        fenomeno que ta jogando demais no brasil e comprei uma AIITV que nao funcionava direito mas eu pedi o rembolso
+        la na havan, eles quiseram teimar comigo mas eu falei aqui nao pq eu conheço meus direitos e entao depois migrei
+        papra a casa do willy wonka e fui na australia achar o LUcas Gunha Claro do DDD +45 de cASCAVEL PR. depois eu
+        fui lanchei comi arroz e um javali que lucas matou no dente eu xinguei ele. ele pegou seu javali que matou e
+        invocou ele e mandou me pegar. numa batalha pokemon escolhi o bruno henrique frança para enfrentar o javali, ja
+        que ele é raro e forte e um dos mais do mundo todo. ele era shiny da bolivia. eu falei use comilao ele pegou e
+        comeu o javali em uma so mordida e falou "aiai como eu gosto de comer".
     </h3>
     <script>
         const elemento = document.getElementById('titulo');
         let alternar = true;
-    
+
         setInterval(() => {
             if (alternar) {
-                elemento.className = 'blue'; 
+                elemento.className = 'blue';
             } else {
-                elemento.className = 'green'; 
+                elemento.className = 'green';
             }
             alternar = !alternar;
         }, 50); 
     </script>
+
     <body>
 
         <script>
             let isRed = true;
-        
+
             setInterval(() => {
                 document.body.style.backgroundColor = isRed ? 'red' : 'yellow'; // Altera a cor do fundo
                 isRed = !isRed; // Inverte a variável para a próxima troca
             }, 1000); 
         </script>
-        
-        </body>
+
+    </body>
 
 </html>
