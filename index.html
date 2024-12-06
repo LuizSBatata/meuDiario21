@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario de um Batata</title>
+ <style>
+
+img {
+            width: 296px;
+            weight: 455px;
+        }
+
+    .centro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    h1 {
+            text-align: center;
+
+        }
+
+        h2 {
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10%;
+
+        }
+
+        body {
+            background-color: rgb(241, 122, 226);
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .green{
+            color: green;
+        }
+
+        .blue{
+            color: blue;
+        }
+        
+</style>
+</head>
+<body>
+    <div class="centro">
+        <img src="Untitled Project.jpg">
+    </div>
+    <h2 id="titulo">Meu título que muda de cor</h2>
+
+    <script>
+        const elemento = document.getElementById('titulo');
+        let alternar = true;
+    
+        setInterval(() => {
+            if (alternar) {
+                elemento.className = 'red'; 
+            } else {
+                elemento.className = 'green'; 
+            }
+            alternar = !alternar;
+        }, 5000); 
+    </script>
+</body>
+</html>
