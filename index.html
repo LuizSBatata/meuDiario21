@@ -19,7 +19,7 @@
 
         img {
             width: 296px;
-            weight: 455px;
+            height: 455px;
         }
 
         .centro {
@@ -44,35 +44,36 @@
         h3 {
             margin-left: 20%;
             margin-right: 20%;
-   
 
-            body {
-                transition: background-color 0.5s;
-            }
+        }
 
-            h2 {
-                color: rgb(253, 253, 253);
-            }
+        body {
+            transition: background-color 0.5s;
+        }
 
-            h1 {
-                color: white;
-            }
+        h2 {
+            color: rgb(253, 253, 253);
+        }
 
-            .red {
-                color: red;
-            }
+        h1 {
+            color: white;
+        }
 
-            .green {
-                color: green;
-            }
+        .red {
+            color: red;
+        }
 
-            .blue {
-                color: blue;
-            }
+        .green {
+            color: green;
+        }
 
-            .yellow {
-                color: yellow;
-            }
+        .blue {
+            color: blue;
+        }
+
+        .yellow {
+            color: yellow;
+        }
     </style>
 </head>
 
@@ -91,7 +92,7 @@
         que ele é raro e forte e um dos mais do mundo todo. ele era shiny da bolivia. eu falei use comilao ele pegou e
         comeu o javali em uma so mordida e falou "aiai como eu gosto de comer".
     </h3>
-    <h2>
+
     <script>
         const elemento = document.getElementById('titulo');
         let alternar = true;
@@ -103,20 +104,16 @@
                 elemento.className = 'green';
             }
             alternar = !alternar;
-        }, 50); 
+        }, 50);
+
+        let isRed = true;
+
+        setInterval(() => {
+            document.body.style.backgroundColor = isRed ? 'red' : 'yellow'; // Altera a cor do fundo
+            isRed = !isRed; // Inverte a variável para a próxima troca
+        }, 1000); 
     </script>
-    </h2>
-    <body>
 
-        <script>
-            let isRed = true;
-
-            setInterval(() => {
-                document.body.style.backgroundColor = isRed ? 'red' : 'yellow'; // Altera a cor do fundo
-                isRed = !isRed; // Inverte a variável para a próxima troca
-            }, 1000); 
-        </script>
-
-    </body>
+</body>
 
 </html>
