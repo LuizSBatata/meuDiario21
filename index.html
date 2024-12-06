@@ -76,5 +76,19 @@ img {
             alternar = !alternar;
         }, 50); 
     </script>
-</body>
+ <body>
+    <script>
+        const elemento = document.getElementById('titulo');
+        let alternar = true;
+    
+        setInterval(() => {
+            if (alternar) {
+                elemento.className = 'blue'; 
+            } else {
+                elemento.className = 'green'; 
+            }
+            alternar = !alternar;
+        }, 50); 
+    </script>
+ </body>
 </html>
