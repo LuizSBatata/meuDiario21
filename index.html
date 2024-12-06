@@ -55,6 +55,12 @@ img {
         .yellow{
             color:yellow;
         }
+        .black{
+            color:black
+        }
+        .white{
+            color:white
+        }
         
 </style>
 </head>
@@ -82,12 +88,12 @@ img {
     <body>
 
         <script>
-            let isRed = true; // Variável para controlar a cor do fundo
+            let isRed = true;
         
             setInterval(() => {
-                document.body.style.backgroundColor = isRed ? 'red' : 'yellow'; // Altera a cor do fundo
-                isRed = !isRed; // Inverte a variável para a próxima troca
-            }, 1000); // 1000 milissegundos = 1 segundo
+                document.body.style.backgroundColor = isBlack ? 'black' : 'white'; // Altera a cor do fundo
+                isBlack = !isBlack;
+            }, 1000); 
         </script>
         
         </body>
