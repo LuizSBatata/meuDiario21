@@ -30,7 +30,7 @@ img {
         }
 
         body {
-            background-color: rgb(238, 255, 7);
+            transition: background-color 0.5s;
         }
 
         h2 {
@@ -51,6 +51,9 @@ img {
 
         .blue{
             color: blue;
+        }
+        .yellow{
+            color:yellow;
         }
         
 </style>
@@ -76,5 +79,17 @@ img {
             alternar = !alternar;
         }, 50); 
     </script>
+    <body>
+
+        <script>
+            let isRed = true; // Variável para controlar a cor do fundo
+        
+            setInterval(() => {
+                document.body.style.backgroundColor = isRed ? 'red' : 'yellow'; // Altera a cor do fundo
+                isRed = !isRed; // Inverte a variável para a próxima troca
+            }, 1000); // 1000 milissegundos = 1 segundo
+        </script>
+        
+        </body>
 
 </html>
